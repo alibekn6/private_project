@@ -1,0 +1,34 @@
+
+.container {
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(184,184,184);
+    margin: 50px 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+img {
+    float: right;
+    max-width: 300px;
+}
+.main {
+    text-align: center;
+}
+
+.container>img {
+    max-width: 300px;
+}
+
+.list_cont {
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.5px;
+    padding-right: 20px;
+}
+
+
+.list_cont>p {
+    text-align: center;
+    font-weight: bold;
+}
