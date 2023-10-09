@@ -1,18 +1,32 @@
-const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели ?", "")
+const lines = 5;
+let result = '';
 
-const PersonalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false,
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
+    }
+
+    for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+
+    result += "\n";
 }
 
-
-let movieName = prompt("Один из последних просмотренных фильмов ?")
-let movieRate = prompt("На сколько оцените его ?")
-
-PersonalMovieDB.movies[movieName] = movieRate
+console.log(result);
 
 
-console.log(PersonalMovieDB);
+// const lines = 5;
+// let result = '';
+
+// for (let i = 0; i <= lines; i++) {
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
+// }
+
+// console.log(result)
