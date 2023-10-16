@@ -1,8 +1,28 @@
 "use strict"
 
-function showFirstMessage(text, arg) {
-    console.log(text, arg);
-    let num = 20;
+// function declaration 
+// function expression
+// -> functions
+
+
+let foo = function() {
+    console.log("Hello");
+};
+
+
+function logger(a, b) {
+    console.log(a + b);
 }
 
-showFirstMessage("Heje", 123)
+
+
+// -> function ->
+
+
+const calc = (a, b) => {
+    a * b
+}
+
+calc(1,2)
+
+console.log(calc(5,2));
